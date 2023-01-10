@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05EBE478BC03D9FA8D18CF42 /* Pods_AisleAssessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E915F45F23A6DDA08685EEFE /* Pods_AisleAssessment.framework */; };
 		12DC40C5296DEC60006BFB71 /* AisleAssessmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40C4296DEC60006BFB71 /* AisleAssessmentApp.swift */; };
 		12DC40C7296DEC60006BFB71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40C6296DEC60006BFB71 /* ContentView.swift */; };
 		12DC40C9296DEC61006BFB71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12DC40C8296DEC61006BFB71 /* Assets.xcassets */; };
 		12DC40CC296DEC61006BFB71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12DC40CB296DEC61006BFB71 /* Preview Assets.xcassets */; };
+		12DC40D9296DEFDB006BFB71 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40D8296DEFDB006BFB71 /* Constants.swift */; };
+		12DC40DB296DF053006BFB71 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40DA296DF053006BFB71 /* ServiceManager.swift */; };
+		12DC40DF296DF17F006BFB71 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40DE296DF17F006BFB71 /* Router.swift */; };
+		12DC40E2296DF4EA006BFB71 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40E1296DF4EA006BFB71 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,13 @@
 		12DC40C6296DEC60006BFB71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		12DC40C8296DEC61006BFB71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12DC40CB296DEC61006BFB71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		12DC40D8296DEFDB006BFB71 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		12DC40DA296DF053006BFB71 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		12DC40DE296DF17F006BFB71 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		12DC40E1296DF4EA006BFB71 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		6CF6C6934AC4782B680B2FAE /* Pods-AisleAssessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AisleAssessment.debug.xcconfig"; path = "Target Support Files/Pods-AisleAssessment/Pods-AisleAssessment.debug.xcconfig"; sourceTree = "<group>"; };
+		B9EDF33B315215E68CB9B118 /* Pods-AisleAssessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AisleAssessment.release.xcconfig"; path = "Target Support Files/Pods-AisleAssessment/Pods-AisleAssessment.release.xcconfig"; sourceTree = "<group>"; };
+		E915F45F23A6DDA08685EEFE /* Pods_AisleAssessment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AisleAssessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05EBE478BC03D9FA8D18CF42 /* Pods_AisleAssessment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +50,8 @@
 			children = (
 				12DC40C3296DEC60006BFB71 /* AisleAssessment */,
 				12DC40C2296DEC60006BFB71 /* Products */,
+				F7ABE7A8E4DB3E15F35AB6EC /* Pods */,
+				5E2B4C981F169AF1F2AE1563 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				12DC40C4296DEC60006BFB71 /* AisleAssessmentApp.swift */,
-				12DC40C6296DEC60006BFB71 /* ContentView.swift */,
+				12DC40D4296DEE32006BFB71 /* Model */,
+				12DC40D2296DEE1F006BFB71 /* View */,
+				12DC40D3296DEE2A006BFB71 /* ModelView */,
+				12DC40D6296DEE5E006BFB71 /* Utils */,
+				12DC40D5296DEE55006BFB71 /* Networking */,
+				12DC40D7296DEE7F006BFB71 /* Fonts */,
 				12DC40C8296DEC61006BFB71 /* Assets.xcassets */,
 				12DC40CA296DEC61006BFB71 /* Preview Content */,
 			);
@@ -67,6 +87,70 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		12DC40D2296DEE1F006BFB71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12DC40C6296DEC60006BFB71 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12DC40D3296DEE2A006BFB71 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				12DC40E1296DF4EA006BFB71 /* ViewModel.swift */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		12DC40D4296DEE32006BFB71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		12DC40D5296DEE55006BFB71 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				12DC40DA296DF053006BFB71 /* ServiceManager.swift */,
+				12DC40DE296DF17F006BFB71 /* Router.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		12DC40D6296DEE5E006BFB71 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				12DC40D8296DEFDB006BFB71 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		12DC40D7296DEE7F006BFB71 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5E2B4C981F169AF1F2AE1563 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E915F45F23A6DDA08685EEFE /* Pods_AisleAssessment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7ABE7A8E4DB3E15F35AB6EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CF6C6934AC4782B680B2FAE /* Pods-AisleAssessment.debug.xcconfig */,
+				B9EDF33B315215E68CB9B118 /* Pods-AisleAssessment.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12DC40CF296DEC61006BFB71 /* Build configuration list for PBXNativeTarget "AisleAssessment" */;
 			buildPhases = (
+				E016E8F23142AB78CEDB475E /* [CP] Check Pods Manifest.lock */,
 				12DC40BD296DEC60006BFB71 /* Sources */,
 				12DC40BE296DEC60006BFB71 /* Frameworks */,
 				12DC40BF296DEC60006BFB71 /* Resources */,
+				5F0EF1B87895592D145CC9B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +218,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F0EF1B87895592D145CC9B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AisleAssessment/Pods-AisleAssessment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AisleAssessment/Pods-AisleAssessment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AisleAssessment/Pods-AisleAssessment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E016E8F23142AB78CEDB475E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AisleAssessment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		12DC40BD296DEC60006BFB71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +267,10 @@
 			files = (
 				12DC40C7296DEC60006BFB71 /* ContentView.swift in Sources */,
 				12DC40C5296DEC60006BFB71 /* AisleAssessmentApp.swift in Sources */,
+				12DC40DF296DF17F006BFB71 /* Router.swift in Sources */,
+				12DC40D9296DEFDB006BFB71 /* Constants.swift in Sources */,
+				12DC40E2296DF4EA006BFB71 /* ViewModel.swift in Sources */,
+				12DC40DB296DF053006BFB71 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +395,7 @@
 		};
 		12DC40D0296DEC61006BFB71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF6C6934AC4782B680B2FAE /* Pods-AisleAssessment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,6 +424,7 @@
 		};
 		12DC40D1296DEC61006BFB71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9EDF33B315215E68CB9B118 /* Pods-AisleAssessment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

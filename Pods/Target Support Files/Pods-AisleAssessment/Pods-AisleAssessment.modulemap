@@ -1,0 +1,6 @@
+framework module Pods_AisleAssessment {
+  umbrella header "Pods-AisleAssessment-umbrella.h"
+
+  export *
+  module * { export * }
+}
