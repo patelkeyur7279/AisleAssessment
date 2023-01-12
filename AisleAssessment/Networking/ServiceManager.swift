@@ -10,6 +10,8 @@ import Alamofire
 
 class ServiceManager {
     
+    static let shared = ServiceManager()
+    
     let sessionManager: Session = {
         let configuration = URLSessionConfiguration.af.default
         configuration.timeoutIntervalForRequest = 60

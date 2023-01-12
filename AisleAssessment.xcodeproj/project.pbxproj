@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		05EBE478BC03D9FA8D18CF42 /* Pods_AisleAssessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E915F45F23A6DDA08685EEFE /* Pods_AisleAssessment.framework */; };
+		129037C0296EA866005E946D /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129037BF296EA866005E946D /* NoteViewModel.swift */; };
+		129037C2296EB16D005E946D /* NoteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129037C1296EB16D005E946D /* NoteResponse.swift */; };
 		12DC40C5296DEC60006BFB71 /* AisleAssessmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40C4296DEC60006BFB71 /* AisleAssessmentApp.swift */; };
 		12DC40C7296DEC60006BFB71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40C6296DEC60006BFB71 /* ContentView.swift */; };
 		12DC40C9296DEC61006BFB71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12DC40C8296DEC61006BFB71 /* Assets.xcassets */; };
@@ -15,10 +17,14 @@
 		12DC40D9296DEFDB006BFB71 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40D8296DEFDB006BFB71 /* Constants.swift */; };
 		12DC40DB296DF053006BFB71 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40DA296DF053006BFB71 /* ServiceManager.swift */; };
 		12DC40DF296DF17F006BFB71 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40DE296DF17F006BFB71 /* Router.swift */; };
-		12DC40E2296DF4EA006BFB71 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40E1296DF4EA006BFB71 /* ViewModel.swift */; };
+		12DC40E2296DF4EA006BFB71 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40E1296DF4EA006BFB71 /* AuthViewModel.swift */; };
+		12DC40E4296DF791006BFB71 /* AuthAPIResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40E3296DF791006BFB71 /* AuthAPIResponses.swift */; };
+		12DC40E6296DFCC7006BFB71 /* VerifyOTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40E5296DFCC7006BFB71 /* VerifyOTPView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		129037BF296EA866005E946D /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		129037C1296EB16D005E946D /* NoteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteResponse.swift; sourceTree = "<group>"; };
 		12DC40C1296DEC60006BFB71 /* AisleAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AisleAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12DC40C4296DEC60006BFB71 /* AisleAssessmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AisleAssessmentApp.swift; sourceTree = "<group>"; };
 		12DC40C6296DEC60006BFB71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,7 +33,10 @@
 		12DC40D8296DEFDB006BFB71 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		12DC40DA296DF053006BFB71 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		12DC40DE296DF17F006BFB71 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		12DC40E1296DF4EA006BFB71 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		12DC40E1296DF4EA006BFB71 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		12DC40E3296DF791006BFB71 /* AuthAPIResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPIResponses.swift; sourceTree = "<group>"; };
+		12DC40E5296DFCC7006BFB71 /* VerifyOTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOTPView.swift; sourceTree = "<group>"; };
+		12DC40E7296E013C006BFB71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6CF6C6934AC4782B680B2FAE /* Pods-AisleAssessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AisleAssessment.debug.xcconfig"; path = "Target Support Files/Pods-AisleAssessment/Pods-AisleAssessment.debug.xcconfig"; sourceTree = "<group>"; };
 		B9EDF33B315215E68CB9B118 /* Pods-AisleAssessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AisleAssessment.release.xcconfig"; path = "Target Support Files/Pods-AisleAssessment/Pods-AisleAssessment.release.xcconfig"; sourceTree = "<group>"; };
 		E915F45F23A6DDA08685EEFE /* Pods_AisleAssessment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AisleAssessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +75,7 @@
 		12DC40C3296DEC60006BFB71 /* AisleAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				12DC40E7296E013C006BFB71 /* Info.plist */,
 				12DC40C4296DEC60006BFB71 /* AisleAssessmentApp.swift */,
 				12DC40D4296DEE32006BFB71 /* Model */,
 				12DC40D2296DEE1F006BFB71 /* View */,
@@ -91,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				12DC40C6296DEC60006BFB71 /* ContentView.swift */,
+				12DC40E5296DFCC7006BFB71 /* VerifyOTPView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -98,7 +109,8 @@
 		12DC40D3296DEE2A006BFB71 /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
-				12DC40E1296DF4EA006BFB71 /* ViewModel.swift */,
+				12DC40E1296DF4EA006BFB71 /* AuthViewModel.swift */,
+				129037BF296EA866005E946D /* NoteViewModel.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -106,6 +118,8 @@
 		12DC40D4296DEE32006BFB71 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				12DC40E3296DF791006BFB71 /* AuthAPIResponses.swift */,
+				129037C1296EB16D005E946D /* NoteResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -265,11 +279,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12DC40E4296DF791006BFB71 /* AuthAPIResponses.swift in Sources */,
+				12DC40E6296DFCC7006BFB71 /* VerifyOTPView.swift in Sources */,
+				129037C0296EA866005E946D /* NoteViewModel.swift in Sources */,
 				12DC40C7296DEC60006BFB71 /* ContentView.swift in Sources */,
 				12DC40C5296DEC60006BFB71 /* AisleAssessmentApp.swift in Sources */,
 				12DC40DF296DF17F006BFB71 /* Router.swift in Sources */,
+				129037C2296EB16D005E946D /* NoteResponse.swift in Sources */,
 				12DC40D9296DEFDB006BFB71 /* Constants.swift in Sources */,
-				12DC40E2296DF4EA006BFB71 /* ViewModel.swift in Sources */,
+				12DC40E2296DF4EA006BFB71 /* AuthViewModel.swift in Sources */,
 				12DC40DB296DF053006BFB71 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +422,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AisleAssessment/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AisleAssessment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -433,6 +452,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AisleAssessment/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AisleAssessment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

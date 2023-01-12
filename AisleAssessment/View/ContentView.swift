@@ -8,9 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var viewModel = AuthViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack(alignment: .leading) {
+            
+            Text("Get OTP")
+
+            Text("Enter Your Phone Number")
+            
+            HStack {
+                TextField("+91", text: $viewModel.countryCode)
+                TextField("9999999999", text: $viewModel.phoneNumber)
+            }
+            
+            Button {
+                viewModel.phoneNumberLogin()
+            } label: {
+                Text("Continue")
+                    .padding()
+            }
+            
+            Spacer()
+            
+            NavigationLink(destination: VerifyOTPView(viewModel: viewModel),
+                           isActive: $viewModel.loginSuccess) {
+                EmptyView()
+            }
+            
+        }
+        .padding()
+        
     }
 }
 

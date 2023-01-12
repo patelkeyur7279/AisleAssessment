@@ -11,7 +11,7 @@ import Alamofire
 enum Router {
     case PhoneNumberLogin(number: String)
     case VerifyOTP(number: String, otp: String)
-    case Notes
+    case Notes(token: String)
     
     var path: String {
         switch self {
@@ -44,8 +44,8 @@ enum Router {
         case .VerifyOTP(let number, let otp):
             return ["number": number,
                     "otp": otp]
-        case .Notes:
-            return ["": ""]
+        case .Notes(let token):
+            return ["Authorization": token]
         }
     }
     
@@ -54,10 +54,22 @@ enum Router {
 extension Router: URLRequestConvertible {
     func asURLRequest() throws -> URLRequest {
         let url = try BASE_URL.asURL().appendingPathComponent(path)
+        print("URL: \(url)")
         var request = URLRequest(url: url)
         request.method = method
+        print("Parameters: \(parameters)")
         request = try URLEncoding.default.encode(request, with: parameters)
         request.setValue("application/json", forHTTPHeaderField: "Accept")
+        
+        switch self {
+        case .PhoneNumberLogin(_):
+            break
+        case .VerifyOTP(_,  _):
+            break
+        case .Notes(let token):
+            request.setValue(token, forHTTPHeaderField: "Authorization")
+        }
+        
         return request
     }
 }
