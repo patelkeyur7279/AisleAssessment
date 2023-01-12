@@ -20,7 +20,7 @@ class AuthViewModel: ObservableObject {
     @Published var otpExpireTime: String = ""
     
     @Published var loginSuccess: Bool = false
-    @Published var token: String = ""
+    @Published var otpVerifySccess: Bool = false
     @Published var error: Bool = false
     
     // MARK: Other Functions
@@ -61,8 +61,8 @@ class AuthViewModel: ObservableObject {
             .sink { [weak self] (result) in
                 print("Response: \(result)")
                 if let value = result.value {
-                    self?.token = value.token ?? ""
-                    self?.getNotes()
+                    UserDefaults.standard.saveToken(token: value.token ?? "")
+                    self?.otpVerifySccess = true
                 } else if let error = result.error {
                     print("Error: \(String(describing: error.errorDescription))")
                     self?.error = true

@@ -13,12 +13,16 @@ class NoteViewModel: ObservableObject {
     // MARK: Global Variables
     private var cancellables = Set<AnyCancellable>()
     
-    var token: String
+    lazy var token: String = {
+        return UserDefaults.standard.getToken() ?? ""
+    }()
     
-    init(token: String) {
-        self.token = token
+    @Published var noteData: NoteResponse = NoteResponse()
+    
+    
+    init() {
+        getNotes()
     }
-    
     
     // MARK: API Calls
     func getNotes() {
@@ -29,7 +33,7 @@ class NoteViewModel: ObservableObject {
             .sink { [weak self] (result) in
                 print("Response: \(result)")
                 if let value = result.value {
-
+                    self?.noteData = value
                 } else if let error = result.error {
                     print("Error: \(String(describing: error.errorDescription))")
                 }

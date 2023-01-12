@@ -51,6 +51,11 @@ struct VerifyOTPView: View {
             
             Spacer()
             
+            NavigationLink(destination: DashboardTabView(),
+                           isActive: $viewModel.otpVerifySccess) {
+                EmptyView()
+            }
+            
         }
         .padding()
         .onReceive(timer) { time in

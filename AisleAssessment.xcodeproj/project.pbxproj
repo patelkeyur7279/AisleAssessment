@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		05EBE478BC03D9FA8D18CF42 /* Pods_AisleAssessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E915F45F23A6DDA08685EEFE /* Pods_AisleAssessment.framework */; };
+		12870A00296F94090011BF60 /* DashboardTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128709FF296F94090011BF60 /* DashboardTabView.swift */; };
+		12870A03296F95F00011BF60 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12870A02296F95F00011BF60 /* NoteView.swift */; };
+		12870A05296F97910011BF60 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12870A04296F97910011BF60 /* Extensions.swift */; };
+		12870A07296F9B050011BF60 /* NoteInviteChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12870A06296F9B050011BF60 /* NoteInviteChildView.swift */; };
+		12870A09296FA3500011BF60 /* NoteLikesChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12870A08296FA3500011BF60 /* NoteLikesChildView.swift */; };
 		129037C0296EA866005E946D /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129037BF296EA866005E946D /* NoteViewModel.swift */; };
 		129037C2296EB16D005E946D /* NoteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129037C1296EB16D005E946D /* NoteResponse.swift */; };
 		12DC40C5296DEC60006BFB71 /* AisleAssessmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40C4296DEC60006BFB71 /* AisleAssessmentApp.swift */; };
@@ -23,6 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		128709FF296F94090011BF60 /* DashboardTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabView.swift; sourceTree = "<group>"; };
+		12870A02296F95F00011BF60 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		12870A04296F97910011BF60 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		12870A06296F9B050011BF60 /* NoteInviteChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteInviteChildView.swift; sourceTree = "<group>"; };
+		12870A08296FA3500011BF60 /* NoteLikesChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteLikesChildView.swift; sourceTree = "<group>"; };
 		129037BF296EA866005E946D /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		129037C1296EB16D005E946D /* NoteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteResponse.swift; sourceTree = "<group>"; };
 		12DC40C1296DEC60006BFB71 /* AisleAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AisleAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +64,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12870A01296F95A00011BF60 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				128709FF296F94090011BF60 /* DashboardTabView.swift */,
+				12870A02296F95F00011BF60 /* NoteView.swift */,
+				12870A06296F9B050011BF60 /* NoteInviteChildView.swift */,
+				12870A08296FA3500011BF60 /* NoteLikesChildView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		12DC40B8296DEC5F006BFB71 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +123,7 @@
 			children = (
 				12DC40C6296DEC60006BFB71 /* ContentView.swift */,
 				12DC40E5296DFCC7006BFB71 /* VerifyOTPView.swift */,
+				12870A01296F95A00011BF60 /* Dashboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				12DC40D8296DEFDB006BFB71 /* Constants.swift */,
+				12870A04296F97910011BF60 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -280,11 +303,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				12DC40E4296DF791006BFB71 /* AuthAPIResponses.swift in Sources */,
+				12870A09296FA3500011BF60 /* NoteLikesChildView.swift in Sources */,
 				12DC40E6296DFCC7006BFB71 /* VerifyOTPView.swift in Sources */,
+				12870A03296F95F00011BF60 /* NoteView.swift in Sources */,
 				129037C0296EA866005E946D /* NoteViewModel.swift in Sources */,
 				12DC40C7296DEC60006BFB71 /* ContentView.swift in Sources */,
+				12870A00296F94090011BF60 /* DashboardTabView.swift in Sources */,
 				12DC40C5296DEC60006BFB71 /* AisleAssessmentApp.swift in Sources */,
 				12DC40DF296DF17F006BFB71 /* Router.swift in Sources */,
+				12870A07296F9B050011BF60 /* NoteInviteChildView.swift in Sources */,
+				12870A05296F97910011BF60 /* Extensions.swift in Sources */,
 				129037C2296EB16D005E946D /* NoteResponse.swift in Sources */,
 				12DC40D9296DEFDB006BFB71 /* Constants.swift in Sources */,
 				12DC40E2296DF4EA006BFB71 /* AuthViewModel.swift in Sources */,
