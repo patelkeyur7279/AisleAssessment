@@ -27,19 +27,28 @@ struct NoteInviteChildView: View {
                     .clipped()
                     .padding()
             
-            
-            VStack(alignment: .leading) {
+            HStack {
+                VStack(alignment: .leading) {
+                    Spacer()
+                    
+                    Text("\(data.generalInformation?.fName ?? "-"), \(data.generalInformation?.age ?? 0)")
+                        .font(.gilory(.bold, size: 22))
+                        .foregroundColor(.white)
+                    
+                    Text("Tap to review 50+ notes")
+                        .font(.gilory(.bold, size: 15))
+                        .foregroundColor(.white)
+                        .padding(.top, 6)
+                }
+                .padding(22)
                 
                 Spacer()
-                
-                Text("\(data.generalInformation?.fName ?? "-"), \(data.generalInformation?.age ?? 0)")
-                    .colorInvert()
-                
-                Text("Tap to review 50+ notes")
-                    .colorInvert()
-                
             }
-            .padding()
+            .background(
+                LinearGradient(gradient: Gradient(colors: [.clear, .transparentGray]),
+                               startPoint: .top,
+                               endPoint: .bottom)
+            )
             
         }
         .onAppear {

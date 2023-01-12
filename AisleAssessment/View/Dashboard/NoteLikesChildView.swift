@@ -29,15 +29,19 @@ struct NoteLikesChildView: View {
                     .clipped()
                     .padding()
             
-            VStack(alignment: .leading) {
-                
+            HStack {
+                VStack(alignment: .leading) {
+                    
+                    Spacer()
+                    
+                    Text(data.firstName ?? "-")
+                        .font(.gilory(.bold, size: 18))
+                        .foregroundColor(.white)
+                    
+                }
+                .padding()
                 Spacer()
-                
-                Text(data.firstName ?? "-")
-                    .colorInvert()
-                
             }
-            .padding()
             
         }
         

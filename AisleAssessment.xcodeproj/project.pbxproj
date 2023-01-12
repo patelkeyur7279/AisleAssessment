@@ -13,6 +13,8 @@
 		12870A05296F97910011BF60 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12870A04296F97910011BF60 /* Extensions.swift */; };
 		12870A07296F9B050011BF60 /* NoteInviteChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12870A06296F9B050011BF60 /* NoteInviteChildView.swift */; };
 		12870A09296FA3500011BF60 /* NoteLikesChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12870A08296FA3500011BF60 /* NoteLikesChildView.swift */; };
+		12870A11296FE78E0011BF60 /* Inter in Resources */ = {isa = PBXBuildFile; fileRef = 12870A10296FE78E0011BF60 /* Inter */; };
+		12870A13296FE7AC0011BF60 /* Gilory in Resources */ = {isa = PBXBuildFile; fileRef = 12870A12296FE7AC0011BF60 /* Gilory */; };
 		129037C0296EA866005E946D /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129037BF296EA866005E946D /* NoteViewModel.swift */; };
 		129037C2296EB16D005E946D /* NoteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129037C1296EB16D005E946D /* NoteResponse.swift */; };
 		12DC40C5296DEC60006BFB71 /* AisleAssessmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40C4296DEC60006BFB71 /* AisleAssessmentApp.swift */; };
@@ -33,6 +35,8 @@
 		12870A04296F97910011BF60 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		12870A06296F9B050011BF60 /* NoteInviteChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteInviteChildView.swift; sourceTree = "<group>"; };
 		12870A08296FA3500011BF60 /* NoteLikesChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteLikesChildView.swift; sourceTree = "<group>"; };
+		12870A10296FE78E0011BF60 /* Inter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Inter; sourceTree = "<group>"; };
+		12870A12296FE7AC0011BF60 /* Gilory */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Gilory; sourceTree = "<group>"; };
 		129037BF296EA866005E946D /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		129037C1296EB16D005E946D /* NoteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteResponse.swift; sourceTree = "<group>"; };
 		12DC40C1296DEC60006BFB71 /* AisleAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AisleAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +171,8 @@
 		12DC40D7296DEE7F006BFB71 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				12870A12296FE7AC0011BF60 /* Gilory */,
+				12870A10296FE78E0011BF60 /* Inter */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -248,6 +254,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12870A13296FE7AC0011BF60 /* Gilory in Resources */,
+				12870A11296FE78E0011BF60 /* Inter in Resources */,
 				12DC40CC296DEC61006BFB71 /* Preview Assets.xcassets in Resources */,
 				12DC40C9296DEC61006BFB71 /* Assets.xcassets in Resources */,
 			);

@@ -21,32 +21,54 @@ struct VerifyOTPView: View {
             HStack {
                 
                 Text(viewModel.getPhoneNumber)
+                    .font(.inter(.regular, size: 18))
+                    .foregroundColor(.black)
                 
                 Button {
                     self.presentationMode.wrappedValue.dismiss()
                     viewModel.otp = ""
                 } label: {
                     Image(systemName: "pencil")
+                        .tint(.black)
                 }
 
             }
+            .padding(.bottom)
 
-            Text("Enter The OTP")
+            Text("Enter The\nOTP")
+                .lineSpacing(8)
+                .font(.inter(.extraBold, size: 30))
+                .foregroundColor(.black)
+            
+            TextField("9999", text: $viewModel.otp)
+                .textFieldStyle(.roundedBorder)
+                .font(.inter(.regular, size: 18))
+                .foregroundColor(.black)
+                .frame(width: 80)
+                .padding(.top)
             
             HStack {
                 
-                TextField("9999", text: $viewModel.otp)
+                Button {
+                    viewModel.verifyOtp()
+                } label: {
+                    Text("Continue")
+                        .font(.inter(.regular, size: 14))
+                        .foregroundColor(.black)
+                        .padding()
+                        .background(Color.lightYellow)
+                        .cornerRadius(20)
+                }
                 
                 Text("00:\(timeRemaining)")
+                    .font(.inter(.bold, size: 14))
+                    .foregroundColor(.black)
+                    .padding(.leading)
+                
+                Spacer()
                 
             }
-            
-            Button {
-                viewModel.verifyOtp()
-            } label: {
-                Text("Continue")
-                    .padding()
-            }
+            .padding(.top)
 
             
             Spacer()
