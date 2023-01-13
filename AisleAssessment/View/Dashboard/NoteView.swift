@@ -78,6 +78,7 @@ struct NoteView: View {
                         }
                     }
                 }
+                .padding(.bottom)
                 .padding(.horizontal)
                 
             }

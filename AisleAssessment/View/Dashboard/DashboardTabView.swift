@@ -16,24 +16,43 @@ struct DashboardTabView: View {
                 .tabItem {
                     Image("Discover")
                     Text("Discover")
+                        .font(.gilory(.regular, size: 12))
+                        .foregroundColor(.lightGray)
                 }
             
             NoteView()
                 .tabItem {
                     Image("Notes")
+                    
                     Text("Notes")
+                        .font(.gilory(.regular, size: 12))
+                        .foregroundColor(.lightGray)
                 }
+                .badge(
+                    Text("9")
+//                        .foregroundColor(.lightPurple)
+//                        .font(.headline)
+                )
             
             Text("Matches Screen")
                 .tabItem {
                     Image("Matches")
                     Text("Matches")
+                        .font(.gilory(.regular, size: 12))
+                        .foregroundColor(.lightGray)
                 }
+                .badge(
+                    Text("50+")
+//                        .foregroundColor(.lightPurple)
+//                        .font(.headline)
+                )
             
             Text("Profile Screen")
                 .tabItem {
                     Image("Profile")
                     Text("Profile")
+                        .font(.gilory(.regular, size: 12))
+                        .foregroundColor(.lightGray)
                 }
             
         }

@@ -19,7 +19,8 @@ struct NoteLikesChildView: View {
             AsyncImage(url: URL(string: data.avatar ?? "")!) { image in
                         image
                             .resizable()
-                            .aspectRatio(contentMode: .fill)
+                            .frame(height: 255)
+                            .aspectRatio(contentMode: .fit)
                             .layoutPriority(-1)
                             .blur(radius: canSeeProfiles ? 0 : 20)
                             .overlay {
