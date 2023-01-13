@@ -83,6 +83,8 @@ struct NoteView: View {
                 .padding(.horizontal)
                 
             }
+            .padding(.top, 50)
+            .navigationBarHidden(true)
             
         }
         
