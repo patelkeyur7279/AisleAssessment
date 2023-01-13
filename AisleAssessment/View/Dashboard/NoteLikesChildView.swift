@@ -22,12 +22,21 @@ struct NoteLikesChildView: View {
                             .aspectRatio(contentMode: .fill)
                             .layoutPriority(-1)
                             .blur(radius: canSeeProfiles ? 0 : 20)
+                            .overlay {
+                                VStack {
+                                    Spacer()
+                                    LinearGradient(gradient: Gradient(colors: [.clear, .transparentGray]),
+                                                   startPoint: .top,
+                                                   endPoint: .bottom)
+                                        .frame(height: 60)
+                                }
+                            }
                     } placeholder: {
                         Image(systemName: "photo.fill")
                     }
                     .cornerRadius(10)
                     .clipped()
-                    .padding()
+                    .padding(0)
             
             HStack {
                 VStack(alignment: .leading) {
@@ -35,11 +44,11 @@ struct NoteLikesChildView: View {
                     Spacer()
                     
                     Text(data.firstName ?? "-")
-                        .font(.gilory(.bold, size: 18))
+                        .font(.refinery95(.bold, size: 16))
                         .foregroundColor(.white)
                     
                 }
-                .padding()
+                .padding(16)
                 Spacer()
             }
             

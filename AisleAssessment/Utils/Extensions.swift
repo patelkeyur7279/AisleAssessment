@@ -28,12 +28,33 @@ extension UserDefaults {
 // MARK: Fonts
 extension Font {
     
+    static func refinery95(_ type: Refinery95, size: CGFloat = 26) -> Font {
+        return .custom(type.value, size: size)
+    }
+    
     static func inter(_ type: Inter, size: CGFloat = 26) -> Font {
         return .custom(type.value, size: size)
     }
     
     static func gilory(_ type: Gilory, size: CGFloat = 26) -> Font {
         return .custom(type.value, size: size)
+    }
+    
+    enum Refinery95 {
+        case regular
+        case medium
+        case bold
+        
+        var value: String {
+            switch self {
+            case .regular:
+                return "Refinery-95Regular"
+            case .medium:
+                return "Refinery-95Medium"
+            case .bold:
+                return "Refinery-95Bold"
+            }
+        }
     }
     
     enum Inter {
@@ -49,21 +70,21 @@ extension Font {
         var value: String {
             switch self {
             case .black:
-                return "Inter-Black.ttf"
+                return "Inter-Black"
             case .blackItalic:
-                return "Inter-BlackItalic.ttf"
+                return "Inter-BlackItalic"
             case .bold:
-                return "Inter-Bold.ttf"
+                return "Inter-Bold"
             case .boldItalic:
-                return "Inter-BoldItalic.ttf"
+                return "Inter-BoldItalic"
             case .extraBold:
-                return "Inter-ExtraBold.ttf"
+                return "Inter-ExtraBold"
             case .extraLight:
-                return "Inter-ExtraLight.ttf"
+                return "Inter-ExtraLight"
             case .regular:
-                return "Inter-Regular.ttf"
+                return "Inter-Regular"
             case .semiBold:
-                return "Inter-SemiBold.ttf"
+                return "Inter-SemiBold"
             }
         }
     }
@@ -80,19 +101,19 @@ extension Font {
         var value: String {
             switch self {
             case .black:
-                return "Gilroy-Black.ttf"
+                return "Gilroy-Black"
             case .bold:
-                return "Gilroy-Bold.ttf"
+                return "Gilroy-Bold"
             case .heavy:
                 return "Gilroy-Heavy.ttf"
             case .light:
-                return "Gilroy-Light.ttf"
+                return "Gilroy-Light"
             case .medium:
-                return "Gilroy-Medium.ttf"
+                return "Gilroy-Medium"
             case .regular:
-                return "Gilroy-Regular.ttf"
+                return "Gilroy-Regular"
             case .semiBold:
-                return "Gilroy-SemiBold.ttf"
+                return "Gilroy-SemiBold"
             }
         }
     }

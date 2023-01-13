@@ -13,10 +13,50 @@
 		12870A05296F97910011BF60 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12870A04296F97910011BF60 /* Extensions.swift */; };
 		12870A07296F9B050011BF60 /* NoteInviteChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12870A06296F9B050011BF60 /* NoteInviteChildView.swift */; };
 		12870A09296FA3500011BF60 /* NoteLikesChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12870A08296FA3500011BF60 /* NoteLikesChildView.swift */; };
-		12870A11296FE78E0011BF60 /* Inter in Resources */ = {isa = PBXBuildFile; fileRef = 12870A10296FE78E0011BF60 /* Inter */; };
-		12870A13296FE7AC0011BF60 /* Gilory in Resources */ = {isa = PBXBuildFile; fileRef = 12870A12296FE7AC0011BF60 /* Gilory */; };
 		129037C0296EA866005E946D /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129037BF296EA866005E946D /* NoteViewModel.swift */; };
 		129037C2296EB16D005E946D /* NoteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129037C1296EB16D005E946D /* NoteResponse.swift */; };
+		12A413562971DC5400338BD6 /* CustomButtonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A413552971DC5400338BD6 /* CustomButtonShape.swift */; };
+		12A413592971F06100338BD6 /* Refinery-95-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A413582971E88E00338BD6 /* Refinery-95-bold.ttf */; };
+		12A413702971F31B00338BD6 /* Gilroy-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A4135C2971F31A00338BD6 /* Gilroy-MediumItalic.ttf */; };
+		12A413712971F31B00338BD6 /* Gilroy-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A4135D2971F31A00338BD6 /* Gilroy-SemiBoldItalic.ttf */; };
+		12A413722971F31B00338BD6 /* Gilroy-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A4135E2971F31A00338BD6 /* Gilroy-ThinItalic.ttf */; };
+		12A413732971F31B00338BD6 /* Gilroy-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A4135F2971F31A00338BD6 /* Gilroy-UltraLightItalic.ttf */; };
+		12A413742971F31B00338BD6 /* Gilroy-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A413602971F31A00338BD6 /* Gilroy-UltraLight.ttf */; };
+		12A413752971F31B00338BD6 /* Gilroy-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A413612971F31A00338BD6 /* Gilroy-HeavyItalic.ttf */; };
+		12A413762971F31B00338BD6 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A413622971F31A00338BD6 /* Gilroy-Bold.ttf */; };
+		12A413772971F31B00338BD6 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A413632971F31A00338BD6 /* Gilroy-Medium.ttf */; };
+		12A413782971F31B00338BD6 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A413642971F31A00338BD6 /* Gilroy-Regular.ttf */; };
+		12A413792971F31B00338BD6 /* Gilroy-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A413652971F31A00338BD6 /* Gilroy-BlackItalic.ttf */; };
+		12A4137A2971F31B00338BD6 /* Gilroy-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A413662971F31A00338BD6 /* Gilroy-ExtraBold.ttf */; };
+		12A4137B2971F31B00338BD6 /* Gilroy-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A413672971F31A00338BD6 /* Gilroy-BoldItalic.ttf */; };
+		12A4137C2971F31B00338BD6 /* Gilroy-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A413682971F31A00338BD6 /* Gilroy-LightItalic.ttf */; };
+		12A4137D2971F31B00338BD6 /* Gilroy-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A413692971F31A00338BD6 /* Gilroy-Heavy.ttf */; };
+		12A4137E2971F31B00338BD6 /* Gilroy-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A4136A2971F31A00338BD6 /* Gilroy-Light.ttf */; };
+		12A4137F2971F31B00338BD6 /* Gilroy-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A4136B2971F31A00338BD6 /* Gilroy-RegularItalic.ttf */; };
+		12A413802971F31B00338BD6 /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A4136C2971F31A00338BD6 /* Gilroy-SemiBold.ttf */; };
+		12A413812971F31B00338BD6 /* Gilroy-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A4136D2971F31A00338BD6 /* Gilroy-Black.ttf */; };
+		12A413822971F31B00338BD6 /* Gilroy-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A4136E2971F31B00338BD6 /* Gilroy-Thin.ttf */; };
+		12A413832971F31B00338BD6 /* Gilroy-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A4136F2971F31B00338BD6 /* Gilroy-ExtraBoldItalic.ttf */; };
+		12AD97492971F38900862C46 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD97372971F38800862C46 /* Inter-Light.ttf */; };
+		12AD974A2971F38900862C46 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD97382971F38800862C46 /* Inter-Black.ttf */; };
+		12AD974B2971F38900862C46 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD97392971F38800862C46 /* Inter-ExtraBold.ttf */; };
+		12AD974C2971F38900862C46 /* Inter-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD973A2971F38800862C46 /* Inter-BlackItalic.ttf */; };
+		12AD974D2971F38900862C46 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD973B2971F38800862C46 /* Inter-Regular.ttf */; };
+		12AD974E2971F38900862C46 /* Inter-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD973C2971F38800862C46 /* Inter-BoldItalic.ttf */; };
+		12AD974F2971F38900862C46 /* Inter-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD973D2971F38800862C46 /* Inter-LightItalic.ttf */; };
+		12AD97502971F38900862C46 /* Inter-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD973E2971F38800862C46 /* Inter-Italic.ttf */; };
+		12AD97512971F38900862C46 /* Inter-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD973F2971F38800862C46 /* Inter-MediumItalic.ttf */; };
+		12AD97522971F38900862C46 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD97402971F38800862C46 /* Inter-Bold.ttf */; };
+		12AD97532971F38900862C46 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD97412971F38800862C46 /* Inter-Medium.ttf */; };
+		12AD97542971F38900862C46 /* Inter-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD97422971F38800862C46 /* Inter-ExtraBoldItalic.ttf */; };
+		12AD97552971F38900862C46 /* Inter-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD97432971F38800862C46 /* Inter-SemiBoldItalic.ttf */; };
+		12AD97562971F38900862C46 /* Inter-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD97442971F38900862C46 /* Inter-ExtraLightItalic.ttf */; };
+		12AD97572971F38900862C46 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD97452971F38900862C46 /* Inter-ExtraLight.ttf */; };
+		12AD97582971F38900862C46 /* Inter-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD97462971F38900862C46 /* Inter-ThinItalic.ttf */; };
+		12AD97592971F38900862C46 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD97472971F38900862C46 /* Inter-Thin.ttf */; };
+		12AD975A2971F38900862C46 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12AD97482971F38900862C46 /* Inter-SemiBold.ttf */; };
+		12AD975C2971F51800862C46 /* Refinery-95-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A4135A2971F1EC00338BD6 /* Refinery-95-regular.ttf */; };
+		12AD975D2971F51800862C46 /* Refinery-95-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A4135B2971F22100338BD6 /* Refinery-95-medium.ttf */; };
 		12DC40C5296DEC60006BFB71 /* AisleAssessmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40C4296DEC60006BFB71 /* AisleAssessmentApp.swift */; };
 		12DC40C7296DEC60006BFB71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC40C6296DEC60006BFB71 /* ContentView.swift */; };
 		12DC40C9296DEC61006BFB71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12DC40C8296DEC61006BFB71 /* Assets.xcassets */; };
@@ -35,10 +75,50 @@
 		12870A04296F97910011BF60 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		12870A06296F9B050011BF60 /* NoteInviteChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteInviteChildView.swift; sourceTree = "<group>"; };
 		12870A08296FA3500011BF60 /* NoteLikesChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteLikesChildView.swift; sourceTree = "<group>"; };
-		12870A10296FE78E0011BF60 /* Inter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Inter; sourceTree = "<group>"; };
-		12870A12296FE7AC0011BF60 /* Gilory */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Gilory; sourceTree = "<group>"; };
 		129037BF296EA866005E946D /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		129037C1296EB16D005E946D /* NoteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteResponse.swift; sourceTree = "<group>"; };
+		12A413552971DC5400338BD6 /* CustomButtonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonShape.swift; sourceTree = "<group>"; };
+		12A413582971E88E00338BD6 /* Refinery-95-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Refinery-95-bold.ttf"; sourceTree = "<group>"; };
+		12A4135A2971F1EC00338BD6 /* Refinery-95-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Refinery-95-regular.ttf"; sourceTree = "<group>"; };
+		12A4135B2971F22100338BD6 /* Refinery-95-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Refinery-95-medium.ttf"; sourceTree = "<group>"; };
+		12A4135C2971F31A00338BD6 /* Gilroy-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-MediumItalic.ttf"; sourceTree = "<group>"; };
+		12A4135D2971F31A00338BD6 /* Gilroy-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		12A4135E2971F31A00338BD6 /* Gilroy-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ThinItalic.ttf"; sourceTree = "<group>"; };
+		12A4135F2971F31A00338BD6 /* Gilroy-UltraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-UltraLightItalic.ttf"; sourceTree = "<group>"; };
+		12A413602971F31A00338BD6 /* Gilroy-UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-UltraLight.ttf"; sourceTree = "<group>"; };
+		12A413612971F31A00338BD6 /* Gilroy-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		12A413622971F31A00338BD6 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		12A413632971F31A00338BD6 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
+		12A413642971F31A00338BD6 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		12A413652971F31A00338BD6 /* Gilroy-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-BlackItalic.ttf"; sourceTree = "<group>"; };
+		12A413662971F31A00338BD6 /* Gilroy-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.ttf"; sourceTree = "<group>"; };
+		12A413672971F31A00338BD6 /* Gilroy-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-BoldItalic.ttf"; sourceTree = "<group>"; };
+		12A413682971F31A00338BD6 /* Gilroy-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-LightItalic.ttf"; sourceTree = "<group>"; };
+		12A413692971F31A00338BD6 /* Gilroy-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Heavy.ttf"; sourceTree = "<group>"; };
+		12A4136A2971F31A00338BD6 /* Gilroy-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.ttf"; sourceTree = "<group>"; };
+		12A4136B2971F31A00338BD6 /* Gilroy-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-RegularItalic.ttf"; sourceTree = "<group>"; };
+		12A4136C2971F31A00338BD6 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
+		12A4136D2971F31A00338BD6 /* Gilroy-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Black.ttf"; sourceTree = "<group>"; };
+		12A4136E2971F31B00338BD6 /* Gilroy-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Thin.ttf"; sourceTree = "<group>"; };
+		12A4136F2971F31B00338BD6 /* Gilroy-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		12AD97372971F38800862C46 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		12AD97382971F38800862C46 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		12AD97392971F38800862C46 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		12AD973A2971F38800862C46 /* Inter-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-BlackItalic.ttf"; sourceTree = "<group>"; };
+		12AD973B2971F38800862C46 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		12AD973C2971F38800862C46 /* Inter-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-BoldItalic.ttf"; sourceTree = "<group>"; };
+		12AD973D2971F38800862C46 /* Inter-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-LightItalic.ttf"; sourceTree = "<group>"; };
+		12AD973E2971F38800862C46 /* Inter-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Italic.ttf"; sourceTree = "<group>"; };
+		12AD973F2971F38800862C46 /* Inter-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-MediumItalic.ttf"; sourceTree = "<group>"; };
+		12AD97402971F38800862C46 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		12AD97412971F38800862C46 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		12AD97422971F38800862C46 /* Inter-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		12AD97432971F38800862C46 /* Inter-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		12AD97442971F38900862C46 /* Inter-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		12AD97452971F38900862C46 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		12AD97462971F38900862C46 /* Inter-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ThinItalic.ttf"; sourceTree = "<group>"; };
+		12AD97472971F38900862C46 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		12AD97482971F38900862C46 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		12DC40C1296DEC60006BFB71 /* AisleAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AisleAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12DC40C4296DEC60006BFB71 /* AisleAssessmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AisleAssessmentApp.swift; sourceTree = "<group>"; };
 		12DC40C6296DEC60006BFB71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +157,68 @@
 				12870A08296FA3500011BF60 /* NoteLikesChildView.swift */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		12A413572971E87100338BD6 /* Refinery95 */ = {
+			isa = PBXGroup;
+			children = (
+				12A413582971E88E00338BD6 /* Refinery-95-bold.ttf */,
+				12A4135A2971F1EC00338BD6 /* Refinery-95-regular.ttf */,
+				12A4135B2971F22100338BD6 /* Refinery-95-medium.ttf */,
+			);
+			path = Refinery95;
+			sourceTree = "<group>";
+		};
+		12AD97362971F35100862C46 /* Gilory */ = {
+			isa = PBXGroup;
+			children = (
+				12A4136D2971F31A00338BD6 /* Gilroy-Black.ttf */,
+				12A413652971F31A00338BD6 /* Gilroy-BlackItalic.ttf */,
+				12A413622971F31A00338BD6 /* Gilroy-Bold.ttf */,
+				12A413672971F31A00338BD6 /* Gilroy-BoldItalic.ttf */,
+				12A413662971F31A00338BD6 /* Gilroy-ExtraBold.ttf */,
+				12A4136F2971F31B00338BD6 /* Gilroy-ExtraBoldItalic.ttf */,
+				12A413692971F31A00338BD6 /* Gilroy-Heavy.ttf */,
+				12A413612971F31A00338BD6 /* Gilroy-HeavyItalic.ttf */,
+				12A4136A2971F31A00338BD6 /* Gilroy-Light.ttf */,
+				12A413682971F31A00338BD6 /* Gilroy-LightItalic.ttf */,
+				12A413632971F31A00338BD6 /* Gilroy-Medium.ttf */,
+				12A4135C2971F31A00338BD6 /* Gilroy-MediumItalic.ttf */,
+				12A413642971F31A00338BD6 /* Gilroy-Regular.ttf */,
+				12A4136B2971F31A00338BD6 /* Gilroy-RegularItalic.ttf */,
+				12A4136C2971F31A00338BD6 /* Gilroy-SemiBold.ttf */,
+				12A4135D2971F31A00338BD6 /* Gilroy-SemiBoldItalic.ttf */,
+				12A4136E2971F31B00338BD6 /* Gilroy-Thin.ttf */,
+				12A4135E2971F31A00338BD6 /* Gilroy-ThinItalic.ttf */,
+				12A413602971F31A00338BD6 /* Gilroy-UltraLight.ttf */,
+				12A4135F2971F31A00338BD6 /* Gilroy-UltraLightItalic.ttf */,
+			);
+			path = Gilory;
+			sourceTree = "<group>";
+		};
+		12AD975B2971F38C00862C46 /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				12AD97382971F38800862C46 /* Inter-Black.ttf */,
+				12AD973A2971F38800862C46 /* Inter-BlackItalic.ttf */,
+				12AD97402971F38800862C46 /* Inter-Bold.ttf */,
+				12AD973C2971F38800862C46 /* Inter-BoldItalic.ttf */,
+				12AD97392971F38800862C46 /* Inter-ExtraBold.ttf */,
+				12AD97422971F38800862C46 /* Inter-ExtraBoldItalic.ttf */,
+				12AD97452971F38900862C46 /* Inter-ExtraLight.ttf */,
+				12AD97442971F38900862C46 /* Inter-ExtraLightItalic.ttf */,
+				12AD973E2971F38800862C46 /* Inter-Italic.ttf */,
+				12AD97372971F38800862C46 /* Inter-Light.ttf */,
+				12AD973D2971F38800862C46 /* Inter-LightItalic.ttf */,
+				12AD97412971F38800862C46 /* Inter-Medium.ttf */,
+				12AD973F2971F38800862C46 /* Inter-MediumItalic.ttf */,
+				12AD973B2971F38800862C46 /* Inter-Regular.ttf */,
+				12AD97482971F38900862C46 /* Inter-SemiBold.ttf */,
+				12AD97432971F38800862C46 /* Inter-SemiBoldItalic.ttf */,
+				12AD97472971F38900862C46 /* Inter-Thin.ttf */,
+				12AD97462971F38900862C46 /* Inter-ThinItalic.ttf */,
+			);
+			path = Inter;
 			sourceTree = "<group>";
 		};
 		12DC40B8296DEC5F006BFB71 = {
@@ -164,6 +306,7 @@
 			children = (
 				12DC40D8296DEFDB006BFB71 /* Constants.swift */,
 				12870A04296F97910011BF60 /* Extensions.swift */,
+				12A413552971DC5400338BD6 /* CustomButtonShape.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -171,8 +314,9 @@
 		12DC40D7296DEE7F006BFB71 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				12870A12296FE7AC0011BF60 /* Gilory */,
-				12870A10296FE78E0011BF60 /* Inter */,
+				12AD975B2971F38C00862C46 /* Inter */,
+				12AD97362971F35100862C46 /* Gilory */,
+				12A413572971E87100338BD6 /* Refinery95 */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -254,8 +398,47 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12870A13296FE7AC0011BF60 /* Gilory in Resources */,
-				12870A11296FE78E0011BF60 /* Inter in Resources */,
+				12AD975C2971F51800862C46 /* Refinery-95-regular.ttf in Resources */,
+				12AD975D2971F51800862C46 /* Refinery-95-medium.ttf in Resources */,
+				12AD97492971F38900862C46 /* Inter-Light.ttf in Resources */,
+				12AD974A2971F38900862C46 /* Inter-Black.ttf in Resources */,
+				12AD974B2971F38900862C46 /* Inter-ExtraBold.ttf in Resources */,
+				12AD974C2971F38900862C46 /* Inter-BlackItalic.ttf in Resources */,
+				12AD974D2971F38900862C46 /* Inter-Regular.ttf in Resources */,
+				12AD974E2971F38900862C46 /* Inter-BoldItalic.ttf in Resources */,
+				12AD974F2971F38900862C46 /* Inter-LightItalic.ttf in Resources */,
+				12AD97502971F38900862C46 /* Inter-Italic.ttf in Resources */,
+				12AD97512971F38900862C46 /* Inter-MediumItalic.ttf in Resources */,
+				12AD97522971F38900862C46 /* Inter-Bold.ttf in Resources */,
+				12AD97532971F38900862C46 /* Inter-Medium.ttf in Resources */,
+				12AD97542971F38900862C46 /* Inter-ExtraBoldItalic.ttf in Resources */,
+				12AD97552971F38900862C46 /* Inter-SemiBoldItalic.ttf in Resources */,
+				12AD97562971F38900862C46 /* Inter-ExtraLightItalic.ttf in Resources */,
+				12AD97572971F38900862C46 /* Inter-ExtraLight.ttf in Resources */,
+				12AD97582971F38900862C46 /* Inter-ThinItalic.ttf in Resources */,
+				12AD97592971F38900862C46 /* Inter-Thin.ttf in Resources */,
+				12AD975A2971F38900862C46 /* Inter-SemiBold.ttf in Resources */,
+				12A413702971F31B00338BD6 /* Gilroy-MediumItalic.ttf in Resources */,
+				12A413712971F31B00338BD6 /* Gilroy-SemiBoldItalic.ttf in Resources */,
+				12A413722971F31B00338BD6 /* Gilroy-ThinItalic.ttf in Resources */,
+				12A413732971F31B00338BD6 /* Gilroy-UltraLightItalic.ttf in Resources */,
+				12A413742971F31B00338BD6 /* Gilroy-UltraLight.ttf in Resources */,
+				12A413752971F31B00338BD6 /* Gilroy-HeavyItalic.ttf in Resources */,
+				12A413762971F31B00338BD6 /* Gilroy-Bold.ttf in Resources */,
+				12A413772971F31B00338BD6 /* Gilroy-Medium.ttf in Resources */,
+				12A413782971F31B00338BD6 /* Gilroy-Regular.ttf in Resources */,
+				12A413792971F31B00338BD6 /* Gilroy-BlackItalic.ttf in Resources */,
+				12A4137A2971F31B00338BD6 /* Gilroy-ExtraBold.ttf in Resources */,
+				12A4137B2971F31B00338BD6 /* Gilroy-BoldItalic.ttf in Resources */,
+				12A4137C2971F31B00338BD6 /* Gilroy-LightItalic.ttf in Resources */,
+				12A4137D2971F31B00338BD6 /* Gilroy-Heavy.ttf in Resources */,
+				12A4137E2971F31B00338BD6 /* Gilroy-Light.ttf in Resources */,
+				12A4137F2971F31B00338BD6 /* Gilroy-RegularItalic.ttf in Resources */,
+				12A413802971F31B00338BD6 /* Gilroy-SemiBold.ttf in Resources */,
+				12A413812971F31B00338BD6 /* Gilroy-Black.ttf in Resources */,
+				12A413822971F31B00338BD6 /* Gilroy-Thin.ttf in Resources */,
+				12A413832971F31B00338BD6 /* Gilroy-ExtraBoldItalic.ttf in Resources */,
+				12A413592971F06100338BD6 /* Refinery-95-bold.ttf in Resources */,
 				12DC40CC296DEC61006BFB71 /* Preview Assets.xcassets in Resources */,
 				12DC40C9296DEC61006BFB71 /* Assets.xcassets in Resources */,
 			);
@@ -320,6 +503,7 @@
 				12DC40C5296DEC60006BFB71 /* AisleAssessmentApp.swift in Sources */,
 				12DC40DF296DF17F006BFB71 /* Router.swift in Sources */,
 				12870A07296F9B050011BF60 /* NoteInviteChildView.swift in Sources */,
+				12A413562971DC5400338BD6 /* CustomButtonShape.swift in Sources */,
 				12870A05296F97910011BF60 /* Extensions.swift in Sources */,
 				129037C2296EB16D005E946D /* NoteResponse.swift in Sources */,
 				12DC40D9296DEFDB006BFB71 /* Constants.swift in Sources */,

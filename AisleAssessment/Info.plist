@@ -2,27 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Fonts/Inter-Black.ttf</string>
-		<string>Fonts/Inter-BlackItalic.ttf</string>
-		<string>Fonts/Inter-Bold.ttf</string>
-		<string>Fonts/Inter-ExtraBold.ttf</string>
-		<string>Fonts/Inter-ExtraLight.ttf</string>
-		<string>Fonts/Inter-Regular.ttf</string>
-		<string>Fonts/Inter-SemiBold.ttf</string>
-		<string>Fonts/Gilroy-Black.ttf</string>
-		<string>Fonts/Gilroy-Bold.ttf</string>
-		<string>Fonts/Gilroy-Heavy.ttf</string>
-		<string>Fonts/Gilroy-Light.ttf</string>
-		<string>Fonts/Gilroy-Medium.ttf</string>
-		<string>Fonts/Gilroy-Regular.ttf</string>
-		<string>Fonts/Gilroy-SemiBold.ttf</string>
-	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Inter-Black.ttf</string>
+		<string>Inter-BlackItalic.ttf</string>
+		<string>Inter-Bold.ttf</string>
+		<string>Inter-ExtraBold.ttf</string>
+		<string>Inter-ExtraLight.ttf</string>
+		<string>Inter-Regular.ttf</string>
+		<string>Inter-SemiBold.ttf</string>
+		<string>Gilroy-Black.ttf</string>
+		<string>Gilroy-Bold.ttf</string>
+		<string>Gilroy-Heavy.ttf</string>
+		<string>Gilroy-Light.ttf</string>
+		<string>Gilroy-Medium.ttf</string>
+		<string>Gilroy-Regular.ttf</string>
+		<string>Gilroy-SemiBold.ttf</string>
+		<string>Refinery-95-bold.ttf</string>
+		<string>Refinery-95-regular.ttf</string>
+		<string>Refinery-95-medium.ttf</string>
+	</array>
 </dict>
 </plist>

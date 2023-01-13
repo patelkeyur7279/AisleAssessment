@@ -50,7 +50,15 @@ struct ContentView: View {
                     .foregroundColor(.black)
                     .padding()
                     .background(Color.lightYellow)
-                    .cornerRadius(20)
+                    .clipShape(CustomButtonShape())
+                    .padding()
+                    //.background(Color.lightYellow)
+                    //.cornerRadius(20)
+//                    .overlay {
+//                        RoundedRectangle(cornerRadius: 20)
+//                         .inset(by: 5)
+//                         .stroke(Color.lightYellow, lineWidth: 1)
+//                    }
             }
             .padding(.top, 8)
             

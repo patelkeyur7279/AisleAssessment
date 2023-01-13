@@ -20,12 +20,22 @@ struct NoteInviteChildView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .layoutPriority(-1)
+                            .overlay {
+                                VStack {
+                                    Spacer()
+                                    LinearGradient(gradient: Gradient(colors: [.clear, .transparentGray]),
+                                                   startPoint: .top,
+                                                   endPoint: .bottom)
+                                        .frame(height: 100)
+                                }
+                            }
                     } placeholder: {
                         Image(systemName: "photo.fill")
                     }
                     .cornerRadius(10)
                     .clipped()
-                    .padding()
+                    .padding(.vertical, 4)
+                    .padding(.horizontal)
             
             HStack {
                 VStack(alignment: .leading) {
@@ -34,21 +44,18 @@ struct NoteInviteChildView: View {
                     Text("\(data.generalInformation?.fName ?? "-"), \(data.generalInformation?.age ?? 0)")
                         .font(.gilory(.bold, size: 22))
                         .foregroundColor(.white)
+                        .padding(.bottom, 2)
                     
                     Text("Tap to review 50+ notes")
-                        .font(.gilory(.bold, size: 15))
+                        .font(.gilory(.semiBold, size: 15))
                         .foregroundColor(.white)
-                        .padding(.top, 6)
                 }
-                .padding(22)
+                .padding(.horizontal, 30)
+                .padding(.bottom, 20)
                 
                 Spacer()
             }
-            .background(
-                LinearGradient(gradient: Gradient(colors: [.clear, .transparentGray]),
-                               startPoint: .top,
-                               endPoint: .bottom)
-            )
+            
             
         }
         .onAppear {

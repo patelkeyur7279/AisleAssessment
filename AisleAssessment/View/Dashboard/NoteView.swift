@@ -23,13 +23,13 @@ struct NoteView: View {
             VStack {
                 
                 Text("Notes")
-                    .font(.gilory(.black, size: 27))
+                    .font(.refinery95(.bold, size: 27))
                     .foregroundColor(.black)
                 
                 Text("Personal messages to you")
-                    .font(.gilory(.regular, size: 18))
+                    .font(.gilory(.medium, size: 18))
                     .foregroundColor(.black)
-                    .padding(.top)
+                    .padding(.top, 2)
                 
                 ForEach(0..<(viewModel.noteData.invites?.profiles ?? []).count, id: \.self) { index in
                     if let item = viewModel.noteData.invites?.profiles?[index] {
@@ -43,12 +43,14 @@ struct NoteView: View {
                     VStack(alignment: .leading) {
                         
                         Text("Interested In You")
-                            .font(.gilory(.bold, size: 27))
+                            .font(.refinery95(.bold, size: 22))
                             .foregroundColor(.black)
+                            .padding(.bottom, 2)
                         
                         Text("Premium members can view all their likes at once")
-                            .font(.gilory(.light, size: 15))
+                            .font(.gilory(.medium, size: 15))
                             .foregroundColor(.lightGray)
+                            .lineSpacing(6)
                         
                     }
                     
@@ -58,7 +60,7 @@ struct NoteView: View {
                         
                     } label: {
                         Text("Upgrade")
-                            .font(.inter(.regular, size: 14))
+                            .font(.refinery95(.bold, size: 14))
                             .foregroundColor(.black)
                             .padding()
                             .background(Color.lightYellow)
@@ -67,15 +69,16 @@ struct NoteView: View {
 
                     
                 }
-                .padding()
+                .padding(.horizontal)
                 
-                LazyVGrid(columns: columns, spacing: 8) {
+                LazyVGrid(columns: columns, spacing: 4) {
                     ForEach(0..<(viewModel.noteData.likes?.profiles ?? []).count, id: \.self) { index in
                         if let item = viewModel.noteData.likes?.profiles?[index] {
                             NoteLikesChildView(data: item, canSeeProfiles: viewModel.noteData.likes?.canSeeProfile ?? false)
                         }
                     }
                 }
+                .padding(.horizontal)
                 
             }
             
