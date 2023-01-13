@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct DashboardTabView: View {
+    
+    init() {
+        UITabBarItem.appearance().badgeColor = UIColor(named: "LightPurple")
+    }
+    
     var body: some View {
         
         TabView {
