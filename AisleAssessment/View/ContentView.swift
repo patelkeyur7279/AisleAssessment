@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var viewModel = AuthViewModel()
+    @StateObject var viewModel = AuthViewModel.shared
     
     var body: some View {
         
@@ -28,13 +28,14 @@ struct ContentView: View {
             HStack {
                 TextField("+91", text: $viewModel.countryCode)
                     .textFieldStyle(.roundedBorder)
-                    .font(.inter(.regular, size: 18))
+                    .font(.inter(.bold, size: 18))
                     .foregroundColor(.black)
+                    .multilineTextAlignment(.center)
                     .frame(width: 64)
                 
                 TextField("9999999999", text: $viewModel.phoneNumber)
                     .textFieldStyle(.roundedBorder)
-                    .font(.inter(.regular, size: 18))
+                    .font(.inter(.bold, size: 18))
                     .foregroundColor(.black)
                     .frame(width: 150)
                 
@@ -46,31 +47,26 @@ struct ContentView: View {
                 viewModel.phoneNumberLogin()
             } label: {
                 Text("Continue")
-                    .font(.inter(.regular, size: 14))
+                    .font(.inter(.semiBold, size: 14))
                     .foregroundColor(.black)
                     .padding()
-                    .background(Color.lightYellow)
-                    .clipShape(CustomButtonShape())
-                    .padding()
-                    //.background(Color.lightYellow)
-                    //.cornerRadius(20)
-//                    .overlay {
-//                        RoundedRectangle(cornerRadius: 20)
-//                         .inset(by: 5)
-//                         .stroke(Color.lightYellow, lineWidth: 1)
-//                    }
+                    .background(viewModel.isAPICalling ? Color.lightGray : Color.lightYellow)
+                    .clipShape(Capsule())
             }
+            .disabled(viewModel.isAPICalling)
             .padding(.top, 8)
             
             Spacer()
             
-            NavigationLink(destination: VerifyOTPView(viewModel: viewModel),
+            NavigationLink(destination: VerifyOTPView(),
                            isActive: $viewModel.loginSuccess) {
                 EmptyView()
             }
             
         }
+        .padding(.top, 50)
         .padding()
+        .navigationBarHidden(true)
         
     }
 }

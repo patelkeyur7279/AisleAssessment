@@ -10,7 +10,7 @@ import SwiftUI
 struct VerifyOTPView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @StateObject var viewModel: AuthViewModel
+    @StateObject var viewModel = AuthViewModel.shared
     @State private var timeRemaining = 60
     private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -42,7 +42,8 @@ struct VerifyOTPView: View {
             
             TextField("9999", text: $viewModel.otp)
                 .textFieldStyle(.roundedBorder)
-                .font(.inter(.regular, size: 18))
+                .font(.inter(.bold, size: 18))
+                .multilineTextAlignment(.center)
                 .foregroundColor(.black)
                 .frame(width: 80)
                 .padding(.top)
@@ -53,11 +54,11 @@ struct VerifyOTPView: View {
                     viewModel.verifyOtp()
                 } label: {
                     Text("Continue")
-                        .font(.inter(.regular, size: 14))
+                        .font(.inter(.semiBold, size: 14))
                         .foregroundColor(.black)
                         .padding()
-                        .background(Color.lightYellow)
-                        .cornerRadius(20)
+                        .background(viewModel.isAPICalling ? Color.lightGray : Color.lightYellow)
+                        .clipShape(Capsule())
                 }
                 
                 Text("00:\(timeRemaining)")
@@ -73,13 +74,15 @@ struct VerifyOTPView: View {
             
             Spacer()
             
-            NavigationLink(destination: DashboardTabView(),
-                           isActive: $viewModel.otpVerifySccess) {
-                EmptyView()
-            }
+//            NavigationLink(destination: DashboardTabView(),
+//                           isActive: $viewModel.otpVerifySccess) {
+//                EmptyView()
+//            }
             
         }
+        .padding(.top, 50)
         .padding()
+        .navigationBarHidden(true)
         .onReceive(timer) { time in
             if timeRemaining > 0 {
                 timeRemaining -= 1
@@ -91,6 +94,6 @@ struct VerifyOTPView: View {
 
 struct VerifyOTPView_Previews: PreviewProvider {
     static var previews: some View {
-        VerifyOTPView(viewModel: AuthViewModel())
+        VerifyOTPView()
     }
 }

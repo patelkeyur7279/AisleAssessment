@@ -13,15 +13,19 @@ class AuthViewModel: ObservableObject {
     // MARK: Global Variables
     private var cancellables = Set<AnyCancellable>()
     
-    @Published var countryCode: String = ""
-    @Published var phoneNumber: String = ""
-    @Published var otp: String = ""
+    static let shared = AuthViewModel()
+    
+    @Published var countryCode: String = "+91"
+    @Published var phoneNumber: String = "9876543212"
+    @Published var otp: String = "1234"
     
     @Published var otpExpireTime: String = ""
     
     @Published var loginSuccess: Bool = false
     @Published var otpVerifySccess: Bool = false
     @Published var error: Bool = false
+    
+    @Published var isAPICalling: Bool = false
     
     // MARK: Other Functions
     var getPhoneNumber: String {
@@ -31,13 +35,16 @@ class AuthViewModel: ObservableObject {
     // MARK: API Calls
     func phoneNumberLogin() {
         
-        guard !getPhoneNumber.isEmpty else { return }
+        guard !getPhoneNumber.isEmpty && getPhoneNumber.count > 10 else { return }
+        
+        isAPICalling = true
         
         ServiceManager.shared.sessionManager.request(Router.PhoneNumberLogin(number: getPhoneNumber))
             .publishDecodable(type: PhoneNumbderLoginResponse.self)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] (result) in
                 print("Response: \(result)")
+                self?.isAPICalling = false
                 if let value = result.value {
                     self?.loginSuccess = value.status ?? false
                 } else if let error = result.error {
@@ -55,11 +62,14 @@ class AuthViewModel: ObservableObject {
         
         guard !getPhoneNumber.isEmpty && !otp.isEmpty else { return }
         
+        isAPICalling = true
+        
         ServiceManager.shared.sessionManager.request(Router.VerifyOTP(number: getPhoneNumber, otp: otp))
             .publishDecodable(type: VerifyOTPResponse.self)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] (result) in
                 print("Response: \(result)")
+                self?.isAPICalling = false
                 if let value = result.value {
                     UserDefaults.standard.saveToken(token: value.token ?? "")
                     self?.otpVerifySccess = true

@@ -10,6 +10,8 @@ import SwiftUI
 @main
 struct AisleAssessmentApp: App {
     
+    @StateObject var viewModel = AuthViewModel.shared
+    
     init() {
         for family in UIFont.familyNames {
             print(family)
@@ -23,12 +25,12 @@ struct AisleAssessmentApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
-//                if UserDefaults.standard.getToken() != nil && !(UserDefaults.standard.getToken()?.isEmpty ?? false) {
-//                    DashboardTabView()
-//                } else {
-//                    ContentView()
-//                }
+                //ContentView()
+                if viewModel.otpVerifySccess || UserDefaults.standard.getToken() != nil && !(UserDefaults.standard.getToken()?.isEmpty ?? false) {
+                    DashboardTabView()
+                } else {
+                    ContentView()
+                }
             }
         }
     }
