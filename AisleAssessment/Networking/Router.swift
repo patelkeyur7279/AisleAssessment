@@ -44,8 +44,8 @@ enum Router {
         case .VerifyOTP(let number, let otp):
             return ["number": number,
                     "otp": otp]
-        case .Notes(let token):
-            return ["Authorization": token]
+        case .Notes(_):
+            return nil
         }
     }
     
@@ -57,10 +57,8 @@ extension Router: URLRequestConvertible {
         print("URL: \(url)")
         var request = URLRequest(url: url)
         request.method = method
-        print("Parameters: \(parameters)")
         request = try URLEncoding.default.encode(request, with: parameters)
         request.setValue("application/json", forHTTPHeaderField: "Accept")
-        
         switch self {
         case .PhoneNumberLogin(_):
             break
@@ -69,7 +67,6 @@ extension Router: URLRequestConvertible {
         case .Notes(let token):
             request.setValue(token, forHTTPHeaderField: "Authorization")
         }
-        
         return request
     }
 }

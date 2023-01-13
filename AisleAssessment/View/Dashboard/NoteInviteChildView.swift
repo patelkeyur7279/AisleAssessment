@@ -58,9 +58,6 @@ struct NoteInviteChildView: View {
             
             
         }
-        .onAppear {
-            print("Data: \(data)")
-        }
         
     }
 }

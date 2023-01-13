@@ -9,13 +9,15 @@ import SwiftUI
 
 struct DashboardTabView: View {
     
+    @State private var selection = 2
+    
     init() {
         UITabBarItem.appearance().badgeColor = UIColor(named: "LightPurple")
     }
     
     var body: some View {
         
-        TabView {
+        TabView(selection: $selection) {
             
             Text("Discover Screen")
                 .tabItem {
@@ -24,6 +26,7 @@ struct DashboardTabView: View {
                         .font(.gilory(.regular, size: 12))
                         .foregroundColor(.lightGray)
                 }
+                .tag(1)
             
             NoteView()
                 .tabItem {
@@ -33,10 +36,9 @@ struct DashboardTabView: View {
                         .font(.gilory(.regular, size: 12))
                         .foregroundColor(.lightGray)
                 }
+                .tag(2)
                 .badge(
                     Text("9")
-//                        .foregroundColor(.lightPurple)
-//                        .font(.headline)
                 )
             
             Text("Matches Screen")
@@ -46,10 +48,9 @@ struct DashboardTabView: View {
                         .font(.gilory(.regular, size: 12))
                         .foregroundColor(.lightGray)
                 }
+                .tag(3)
                 .badge(
                     Text("50+")
-//                        .foregroundColor(.lightPurple)
-//                        .font(.headline)
                 )
             
             Text("Profile Screen")
@@ -59,6 +60,7 @@ struct DashboardTabView: View {
                         .font(.gilory(.regular, size: 12))
                         .foregroundColor(.lightGray)
                 }
+                .tag(4)
             
         }
         
