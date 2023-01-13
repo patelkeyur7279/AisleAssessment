@@ -43,7 +43,6 @@ class AuthViewModel: ObservableObject {
             .publishDecodable(type: PhoneNumbderLoginResponse.self)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] (result) in
-                print("Response: \(result)")
                 self?.isAPICalling = false
                 if let value = result.value {
                     self?.loginSuccess = value.status ?? false
@@ -58,8 +57,6 @@ class AuthViewModel: ObservableObject {
     
     func verifyOtp() {
         
-        print("verifyOtp: \(getPhoneNumber), \(otp)")
-        
         guard !getPhoneNumber.isEmpty && !otp.isEmpty else { return }
         
         isAPICalling = true
@@ -68,7 +65,6 @@ class AuthViewModel: ObservableObject {
             .publishDecodable(type: VerifyOTPResponse.self)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] (result) in
-                print("Response: \(result)")
                 self?.isAPICalling = false
                 if let value = result.value {
                     UserDefaults.standard.saveToken(token: value.token ?? "")

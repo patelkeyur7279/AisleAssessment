@@ -31,7 +31,6 @@ class NoteViewModel: ObservableObject {
             .publishDecodable(type: NoteResponse.self)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] (result) in
-                print("Response: \(result)")
                 if let value = result.value {
                     self?.noteData = value
                 } else if let error = result.error {

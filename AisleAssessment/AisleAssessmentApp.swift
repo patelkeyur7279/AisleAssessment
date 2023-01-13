@@ -15,7 +15,6 @@ struct AisleAssessmentApp: App {
     init() {
         for family in UIFont.familyNames {
             print(family)
-            
             for names in UIFont.fontNames(forFamilyName: family){
                 print("== \(names)")
             }
@@ -25,7 +24,6 @@ struct AisleAssessmentApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                //ContentView()
                 if viewModel.otpVerifySccess || UserDefaults.standard.getToken() != nil && !(UserDefaults.standard.getToken()?.isEmpty ?? false) {
                     DashboardTabView()
                 } else {

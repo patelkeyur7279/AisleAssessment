@@ -53,6 +53,7 @@ struct NoteView: View {
                             .lineSpacing(6)
                         
                     }
+                    .padding(.leading, 16)
                     
                     Spacer(minLength: 16)
                     
